@@ -1,0 +1,6 @@
+---
+namespace: "5g-bsf-zarlapm"
+analysis: 
+  logplane:
+    name: "all"
+    logs: 10000

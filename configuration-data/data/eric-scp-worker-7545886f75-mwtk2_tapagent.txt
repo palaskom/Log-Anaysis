@@ -1,0 +1,9 @@
+[dumb-init] Unable to detach from controlling tty (errno=25 Inappropriate ioctl for device).
+[dumb-init] Child spawned with PID 8.
+[dumb-init] Unable to attach to controlling tty (errno=25 Inappropriate ioctl for device).
+[dumb-init] setsid complete.
+{"version":"0.2.0","timestamp":"2022-12-02T07:38:07.153867","severity":"debug","service_id":"tap-agent","metadata":{"function":"tap-agent","ul_id":"TapAgentConfig.cc:123"},"message":"capture package function: false"}
+{"version":"0.2.0","timestamp":"2022-12-02T07:38:07.153964","severity":"debug","service_id":"tap-agent","metadata":{"function":"tap-agent","ul_id":"TapAgentConfig.cc:66"},"message":"tcpdump command interface: eth0"}
+{"version":"0.2.0","timestamp":"2022-12-02T07:38:07.153989","severity":"debug","service_id":"tap-agent","metadata":{"function":"tap-agent","ul_id":"TapAgentConfig.cc:95"},"message":"tcpdump command filter: port 80"}
+{"version":"0.2.0","timestamp":"2022-12-02T07:38:07.154003","severity":"debug","service_id":"tap-agent","metadata":{"function":"tap-agent","ul_id":"TapAgentConfig.cc:146"},"message":"TracingMode : sftp"}
+{"version":"0.2.0","timestamp":"2022-12-02T07:38:07.154012","severity":"debug","service_id":"tap-agent","metadata":{"function":"tap-agent","ul_id":"TapAgentConfig.cc:168"},"message":"NF_TYPE : scp"}

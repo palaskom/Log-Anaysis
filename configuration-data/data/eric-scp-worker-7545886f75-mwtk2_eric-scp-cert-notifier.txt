@@ -1,0 +1,284 @@
+07:38:27,517 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.0
+07:38:28,122 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+07:38:28,612 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/java-exec/classes/logback.xml]
+07:38:31,311 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word pid with class [com.ericsson.utilities.logger.ProcessIdConverter]
+07:38:31,312 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word toSeverity with class [com.ericsson.utilities.logger.ToSeverityConverter]
+07:38:31,312 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word toJson with class [com.ericsson.utilities.logger.ToJsonConverter]
+07:38:33,021 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unkown property [jmxConfigurator] in [ch.qos.logback.classic.LoggerContext]
+07:38:33,219 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+07:38:33,219 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+07:38:33,416 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+07:38:41,012 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+07:38:41,113 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+07:38:41,114 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@fd8294b - End of configuration.
+07:38:41,116 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5974109 - Registering current configuration as safe fallback point
+
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:41.513Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||main||c.e.s.c.CertificateNotifier||65||main||Starting Certificate Notifier."}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:44.216Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||main||c.e.u.logger.LogLevelChanger||76||lambda$new$2||Starting dynamic monitoring of log control changes"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:44.615Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||RxCachedThreadScheduler-1||c.e.u.file.ConfigmapWatch||60||lambda$watch$0||Started monitoring configmap file: /worker/config/logcontrol/logcontrol.json"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:47.414Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||RxCachedThreadScheduler-3||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {logcontrol.json=/worker/config/logcontrol/..2022_12_02_07_31_54.4208160872/logcontrol.json}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:47.415Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||RxCachedThreadScheduler-3||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {logcontrol.json=/worker/config/logcontrol/..2022_12_02_07_31_54.4208160872/logcontrol.json}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:49.916Z","service_id":"eric-scp-worker","severity":"warning","message":"certnotifier[7]||RxCachedThreadScheduler-3||c.e.u.logger.LogLevelChanger||189||updateSeverity||Changing logger ROOT of eric-scp-cert-notifier container log level to INFO"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:38:56.517Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||main||c.e.utilities.http.WebServer||97||<init>||Creating new server: com.ericsson.utilities.http.WebServer@518cf84a"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:04.214Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||main||c.e.utilities.http.WebServer||251||lambda$prepareListener$15||Starting HTTP server, host: 192.168.117.78 port: 8088 , configuration: {\"logActivity\":false,\"receiveBufferSize\":-1,\"reuseAddress\":true,\"reusePort\":false,\"sendBufferSize\":-1,\"trafficClass\":-1,\"crlPaths\":[],\"crlValues\":[],\"enabledCipherSuites\":[],\"enabledSecureTransportProtocols\":[\"TLSv1\",\"TLSv1.1\",\"TLSv1.2\"],\"idleTimeout\":0,\"idleTimeoutUnit\":\"SECONDS\",\"openSslEngineOptions\":{\"sessionCacheEnabled\":true},\"readIdleTimeout\":0,\"soLinger\":-1,\"ssl\":false,\"sslHandshakeTimeout\":10,\"sslHandshakeTimeoutUnit\":\"SECONDS\",\"tcpCork\":false,\"tcpFastOpen\":false,\"tcpKeepAlive\":false,\"tcpNoDelay\":true,\"tcpQuickAck\":false,\"useAlpn\":false,\"writeIdleTimeout\":0,\"acceptBacklog\":-1,\"clientAuth\":\"NONE\",\"host\":\"192.168.117.78\",\"port\":8088,\"proxyProtocolTimeout\":10,\"proxyProtocolTimeoutUnit\":\"SECONDS\",\"sni\":false,\"useProxyProtocol\":false,\"acceptUnmaskedFrames\":false,\"alpnVersions\":[\"HTTP_2\",\"HTTP_1_1\"],\"compressionLevel\":6,\"compressionSupported\":false,\"decoderInitialBufferSize\":128,\"decompressionSupported\":false,\"handle100ContinueAutomatically\":false,\"http2ConnectionWindowSize\":-1,\"initialSettings\":{\"headerTableSize\":4096,\"initialWindowSize\":65535,\"maxConcurrentStreams\":100,\"maxFrameSize\":16384,\"maxHeaderListSize\":8192,\"pushEnabled\":true},\"maxChunkSize\":8192,\"maxFormAttributeSize\":8192,\"maxHeaderSize\":8192,\"maxInitialLineLength\":4096,\"maxWebSocketFrameSize\":65536,\"maxWebSocketMessageSize\":262144,\"perFrameWebSocketCompressionSupported\":true,\"perMessageWebSocketCompressionSupported\":true,\"tracingPolicy\":\"ALWAYS\",\"webSocketAllowServerNoContext\":false,\"webSocketClosingTimeout\":10,\"webSocketCompressionLevel\":6,\"webSocketPreferredClientNoContext\":false}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:06.011Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-0||c.e.utilities.http.WebServer||215||lambda$startListener$12||Server started com.ericsson.utilities.http.WebServer@518cf84a"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.525Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-3||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.613Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-2||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.710Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-3||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.711Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-2||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.913Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-4||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.914Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-4||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.914Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-5||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:07.916Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-5||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:10.721Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||98||sendNotification||Notification will be sent using uri /cert-alarm-handler/v1/scp/certs-update and body:{\"asymmetric-keys\":[],\"trusted-authorities\":[]}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:13.420Z","service_id":"eric-scp-worker","severity":"warning","message":"certnotifier[7]||vertx-blocked-thread-checker||i.v.c.i.BlockedThreadChecker||?||?||Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 2696 ms, time limit is 2000 ms"}
+io.vertx.core.VertxException: Thread blocked
+	at java.base@11.0.17/java.lang.ClassLoader.findBootstrapClass(Native Method)
+	at java.base@11.0.17/java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1258)
+	at java.base@11.0.17/java.lang.System$2.findBootstrapClassOrNull(System.java:2134)
+	at java.base@11.0.17/jdk.internal.loader.ClassLoaders$BootClassLoader.loadClassOrNull(ClassLoaders.java:118)
+	at java.base@11.0.17/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:616)
+	at java.base@11.0.17/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:640)
+	at java.base@11.0.17/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:616)
+	at java.base@11.0.17/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+	at java.base@11.0.17/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base@11.0.17/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at app//io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at app//io.netty.resolver.dns.DnsAddressResolverGroup.<init>(DnsAddressResolverGroup.java:61)
+	at app//io.vertx.core.impl.resolver.DnsResolverProvider$1$1.<init>(DnsResolverProvider.java:123)
+	at app//io.vertx.core.impl.resolver.DnsResolverProvider$1.newResolver(DnsResolverProvider.java:123)
+	at app//io.netty.resolver.AddressResolverGroup.getResolver(AddressResolverGroup.java:70)
+	at app//io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:194)
+	at app//io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:162)
+	at app//io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:139)
+	at app//io.vertx.core.net.impl.ChannelProvider.handleConnect(ChannelProvider.java:154)
+	at app//io.vertx.core.net.impl.ChannelProvider.connect(ChannelProvider.java:104)
+	at app//io.vertx.core.net.impl.ChannelProvider.connect(ChannelProvider.java:90)
+	at app//io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:247)
+	at app//io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:88)
+	at app//io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:146)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool$Acquire$3.run(SimpleConnectionPool.java:580)
+	at app//io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.acquire(SimpleConnectionPool.java:624)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint$Request.acquire(SharedClientHttpStreamEndpoint.java:166)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.requestConnection2(SharedClientHttpStreamEndpoint.java:173)
+	at app//io.vertx.core.http.impl.ClientHttpEndpointBase.requestConnection(ClientHttpEndpointBase.java:49)
+	at app//io.vertx.core.net.impl.pool.Endpoint.getConnection(Endpoint.java:41)
+	at app//io.vertx.core.net.impl.pool.ConnectionManager.getConnection(ConnectionManager.java:55)
+	at app//io.vertx.core.http.impl.HttpClientImpl.doRequest(HttpClientImpl.java:624)
+	at app//io.vertx.core.http.impl.HttpClientImpl.doRequest(HttpClientImpl.java:605)
+	at app//io.vertx.core.http.impl.HttpClientImpl.request(HttpClientImpl.java:445)
+	at app//io.vertx.ext.web.client.impl.HttpContext.handleCreateRequest(HttpContext.java:530)
+	at app//io.vertx.ext.web.client.impl.HttpContext.execute(HttpContext.java:375)
+	at app//io.vertx.ext.web.client.impl.HttpContext.next(HttpContext.java:365)
+	at app//io.vertx.ext.web.client.impl.HttpContext.fire(HttpContext.java:332)
+	at app//io.vertx.ext.web.client.impl.HttpContext.createRequest(HttpContext.java:223)
+	at app//io.vertx.ext.web.client.impl.HttpContext.handlePrepareRequest(HttpContext.java:460)
+	at app//io.vertx.ext.web.client.impl.HttpContext.execute(HttpContext.java:372)
+	at app//io.vertx.ext.web.client.impl.HttpContext.next(HttpContext.java:365)
+	at app//io.vertx.ext.web.client.impl.HttpContext.fire(HttpContext.java:332)
+	at app//io.vertx.ext.web.client.impl.HttpContext.prepareRequest(HttpContext.java:211)
+	at app//io.vertx.ext.web.client.impl.HttpRequestImpl.send(HttpRequestImpl.java:326)
+	at app//io.vertx.ext.web.client.impl.HttpRequestImpl.sendJsonObject(HttpRequestImpl.java:296)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest.sendJsonObject(HttpRequest.java:496)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest.lambda$rxSendJsonObject$9(HttpRequest.java:524)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest$$Lambda$549/0x00000001004b2840.accept(Unknown Source)
+	at app//io.vertx.reactivex.impl.AsyncResultSingle.subscribeActual(AsyncResultSingle.java:45)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleFlatMap$SingleFlatMapCallback.onSuccess(SingleFlatMap.java:84)
+	at app//io.reactivex.internal.operators.single.SingleCache.onSuccess(SingleCache.java:134)
+	at app//io.reactivex.internal.observers.ResumeSingleObserver.onSuccess(ResumeSingleObserver.java:46)
+	at app//io.reactivex.internal.operators.single.SingleFromCallable.subscribeActual(SingleFromCallable.java:56)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleDelayWithCompletable$OtherObserver.onComplete(SingleDelayWithCompletable.java:69)
+	at app//io.reactivex.internal.disposables.EmptyDisposable.complete(EmptyDisposable.java:68)
+	at app//io.reactivex.internal.operators.completable.CompletableEmpty.subscribeActual(CompletableEmpty.java:27)
+	at app//io.reactivex.Completable.subscribe(Completable.java:2309)
+	at app//io.reactivex.internal.operators.single.SingleDelayWithCompletable.subscribeActual(SingleDelayWithCompletable.java:36)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleCache.subscribeActual(SingleCache.java:65)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleFlatMap.subscribeActual(SingleFlatMap.java:36)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleToFlowable.subscribeActual(SingleToFlowable.java:37)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14882)
+	at app//io.reactivex.internal.operators.flowable.FlowableRepeatWhen$WhenReceiver.onNext(FlowableRepeatWhen.java:100)
+	at app//io.reactivex.internal.operators.flowable.FlowableRetryWhen.subscribeActual(FlowableRetryWhen.java:62)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at app//io.reactivex.internal.operators.flowable.FlowableSingleSingle.subscribeActual(FlowableSingleSingle.java:39)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.flowable.FlowableFlatMapSingle$FlatMapSingleSubscriber.onNext(FlowableFlatMapSingle.java:132)
+	at app//io.reactivex.subscribers.SerializedSubscriber.onNext(SerializedSubscriber.java:100)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceTimedSubscriber.emit(FlowableDebounceTimed.java:156)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceEmitter.emit(FlowableDebounceTimed.java:191)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceEmitter.run(FlowableDebounceTimed.java:186)
+	at app//io.vertx.reactivex.ContextScheduler$ContextWorker$TimedAction.run(ContextScheduler.java:184)
+	at app//io.vertx.reactivex.ContextScheduler$ContextWorker$TimedAction$$Lambda$447/0x000000010048dc40.handle(Unknown Source)
+	at app//io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at app//io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:63)
+	at app//io.vertx.core.impl.EventLoopContext.lambda$runOnContext$0(EventLoopContext.java:38)
+	at app//io.vertx.core.impl.EventLoopContext$$Lambda$448/0x000000010048d040.run(Unknown Source)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:394)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@11.0.17/java.lang.Thread.run(Thread.java:829)
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:14.511Z","service_id":"eric-scp-worker","severity":"warning","message":"certnotifier[7]||vertx-blocked-thread-checker||i.v.c.i.BlockedThreadChecker||?||?||Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 3697 ms, time limit is 2000 ms"}
+io.vertx.core.VertxException: Thread blocked
+	at app//io.netty.handler.codec.dns.DatagramDnsQueryEncoder.encode(DatagramDnsQueryEncoder.java:72)
+	at app//io.netty.handler.codec.dns.DatagramDnsQueryEncoder.encode(DatagramDnsQueryEncoder.java:33)
+	at app//io.netty.handler.codec.MessageToMessageEncoder.write(MessageToMessageEncoder.java:89)
+	at app//io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:717)
+	at app//io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:709)
+	at app//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:792)
+	at app//io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:702)
+	at app//io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1015)
+	at app//io.netty.channel.AbstractChannel.write(AbstractChannel.java:301)
+	at app//io.netty.resolver.dns.DnsQueryContext.writeQuery(DnsQueryContext.java:178)
+	at app//io.netty.resolver.dns.DnsQueryContext.sendQuery(DnsQueryContext.java:141)
+	at app//io.netty.resolver.dns.DnsQueryContext.query(DnsQueryContext.java:136)
+	at app//io.netty.resolver.dns.DnsNameResolver.query0(DnsNameResolver.java:1272)
+	at app//io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:436)
+	at app//io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:1113)
+	at app//io.netty.resolver.dns.DnsResolveContext.internalResolve(DnsResolveContext.java:358)
+	at app//io.netty.resolver.dns.DnsResolveContext.doSearchDomainQuery(DnsResolveContext.java:284)
+	at app//io.netty.resolver.dns.DnsAddressResolveContext.doSearchDomainQuery(DnsAddressResolveContext.java:96)
+	at app//io.netty.resolver.dns.DnsResolveContext.resolve(DnsResolveContext.java:249)
+	at app//io.netty.resolver.dns.DnsNameResolver.doResolveAllUncached0(DnsNameResolver.java:1158)
+	at app//io.netty.resolver.dns.DnsNameResolver.doResolveAllUncached(DnsNameResolver.java:1131)
+	at app//io.netty.resolver.dns.DnsNameResolver.doResolveUncached(DnsNameResolver.java:1033)
+	at app//io.netty.resolver.dns.DnsNameResolver.doResolve(DnsNameResolver.java:975)
+	at app//io.netty.resolver.dns.DnsNameResolver.doResolve(DnsNameResolver.java:812)
+	at app//io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at app//io.netty.resolver.dns.InflightNameResolver.resolve(InflightNameResolver.java:100)
+	at app//io.netty.resolver.dns.InflightNameResolver.resolve(InflightNameResolver.java:66)
+	at app//io.netty.resolver.dns.InflightNameResolver.resolve(InflightNameResolver.java:51)
+	at app//io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at app//io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at app//io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at app//io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206)
+	at app//io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:162)
+	at app//io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:139)
+	at app//io.vertx.core.net.impl.ChannelProvider.handleConnect(ChannelProvider.java:154)
+	at app//io.vertx.core.net.impl.ChannelProvider.connect(ChannelProvider.java:104)
+	at app//io.vertx.core.net.impl.ChannelProvider.connect(ChannelProvider.java:90)
+	at app//io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:247)
+	at app//io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:88)
+	at app//io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:146)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool$Acquire$3.run(SimpleConnectionPool.java:580)
+	at app//io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240)
+	at app//io.vertx.core.net.impl.pool.SimpleConnectionPool.acquire(SimpleConnectionPool.java:624)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint$Request.acquire(SharedClientHttpStreamEndpoint.java:166)
+	at app//io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.requestConnection2(SharedClientHttpStreamEndpoint.java:173)
+	at app//io.vertx.core.http.impl.ClientHttpEndpointBase.requestConnection(ClientHttpEndpointBase.java:49)
+	at app//io.vertx.core.net.impl.pool.Endpoint.getConnection(Endpoint.java:41)
+	at app//io.vertx.core.net.impl.pool.ConnectionManager.getConnection(ConnectionManager.java:55)
+	at app//io.vertx.core.http.impl.HttpClientImpl.doRequest(HttpClientImpl.java:624)
+	at app//io.vertx.core.http.impl.HttpClientImpl.doRequest(HttpClientImpl.java:605)
+	at app//io.vertx.core.http.impl.HttpClientImpl.request(HttpClientImpl.java:445)
+	at app//io.vertx.ext.web.client.impl.HttpContext.handleCreateRequest(HttpContext.java:530)
+	at app//io.vertx.ext.web.client.impl.HttpContext.execute(HttpContext.java:375)
+	at app//io.vertx.ext.web.client.impl.HttpContext.next(HttpContext.java:365)
+	at app//io.vertx.ext.web.client.impl.HttpContext.fire(HttpContext.java:332)
+	at app//io.vertx.ext.web.client.impl.HttpContext.createRequest(HttpContext.java:223)
+	at app//io.vertx.ext.web.client.impl.HttpContext.handlePrepareRequest(HttpContext.java:460)
+	at app//io.vertx.ext.web.client.impl.HttpContext.execute(HttpContext.java:372)
+	at app//io.vertx.ext.web.client.impl.HttpContext.next(HttpContext.java:365)
+	at app//io.vertx.ext.web.client.impl.HttpContext.fire(HttpContext.java:332)
+	at app//io.vertx.ext.web.client.impl.HttpContext.prepareRequest(HttpContext.java:211)
+	at app//io.vertx.ext.web.client.impl.HttpRequestImpl.send(HttpRequestImpl.java:326)
+	at app//io.vertx.ext.web.client.impl.HttpRequestImpl.sendJsonObject(HttpRequestImpl.java:296)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest.sendJsonObject(HttpRequest.java:496)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest.lambda$rxSendJsonObject$9(HttpRequest.java:524)
+	at app//io.vertx.reactivex.ext.web.client.HttpRequest$$Lambda$549/0x00000001004b2840.accept(Unknown Source)
+	at app//io.vertx.reactivex.impl.AsyncResultSingle.subscribeActual(AsyncResultSingle.java:45)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleFlatMap$SingleFlatMapCallback.onSuccess(SingleFlatMap.java:84)
+	at app//io.reactivex.internal.operators.single.SingleCache.onSuccess(SingleCache.java:134)
+	at app//io.reactivex.internal.observers.ResumeSingleObserver.onSuccess(ResumeSingleObserver.java:46)
+	at app//io.reactivex.internal.operators.single.SingleFromCallable.subscribeActual(SingleFromCallable.java:56)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleDelayWithCompletable$OtherObserver.onComplete(SingleDelayWithCompletable.java:69)
+	at app//io.reactivex.internal.disposables.EmptyDisposable.complete(EmptyDisposable.java:68)
+	at app//io.reactivex.internal.operators.completable.CompletableEmpty.subscribeActual(CompletableEmpty.java:27)
+	at app//io.reactivex.Completable.subscribe(Completable.java:2309)
+	at app//io.reactivex.internal.operators.single.SingleDelayWithCompletable.subscribeActual(SingleDelayWithCompletable.java:36)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleCache.subscribeActual(SingleCache.java:65)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleFlatMap.subscribeActual(SingleFlatMap.java:36)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.single.SingleToFlowable.subscribeActual(SingleToFlowable.java:37)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14882)
+	at app//io.reactivex.internal.operators.flowable.FlowableRepeatWhen$WhenReceiver.onNext(FlowableRepeatWhen.java:100)
+	at app//io.reactivex.internal.operators.flowable.FlowableRetryWhen.subscribeActual(FlowableRetryWhen.java:62)
+	at app//io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at app//io.reactivex.internal.operators.flowable.FlowableSingleSingle.subscribeActual(FlowableSingleSingle.java:39)
+	at app//io.reactivex.Single.subscribe(Single.java:3666)
+	at app//io.reactivex.internal.operators.flowable.FlowableFlatMapSingle$FlatMapSingleSubscriber.onNext(FlowableFlatMapSingle.java:132)
+	at app//io.reactivex.subscribers.SerializedSubscriber.onNext(SerializedSubscriber.java:100)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceTimedSubscriber.emit(FlowableDebounceTimed.java:156)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceEmitter.emit(FlowableDebounceTimed.java:191)
+	at app//io.reactivex.internal.operators.flowable.FlowableDebounceTimed$DebounceEmitter.run(FlowableDebounceTimed.java:186)
+	at app//io.vertx.reactivex.ContextScheduler$ContextWorker$TimedAction.run(ContextScheduler.java:184)
+	at app//io.vertx.reactivex.ContextScheduler$ContextWorker$TimedAction$$Lambda$447/0x000000010048dc40.handle(Unknown Source)
+	at app//io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at app//io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:63)
+	at app//io.vertx.core.impl.EventLoopContext.lambda$runOnContext$0(EventLoopContext.java:38)
+	at app//io.vertx.core.impl.EventLoopContext$$Lambda$448/0x000000010048d040.run(Unknown Source)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at app//io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:394)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@11.0.17/java.lang.Thread.run(Thread.java:829)
+{"version":"1.1.0","timestamp":"2022-12-02T07:39:18.214Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||71||lambda$run$1||POST request response code: 200"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.715Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-6||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.717Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-6||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.717Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-8||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.718Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-8||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.912Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-7||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:42:59.913Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-7||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:43:00.011Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-9||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:43:00.012Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-9||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:43:01.917Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||98||sendNotification||Notification will be sent using uri /cert-alarm-handler/v1/scp/certs-update and body:{\"asymmetric-keys\":[],\"trusted-authorities\":[{\"name\":\"default_ca\",\"certificateAuthority\":true}]}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:43:02.013Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||71||lambda$run$1||POST request response code: 200"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:04.752Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-10||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:04.812Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-10||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:04.812Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-11||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:04.813Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-11||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:06.916Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-0||c.e.s.c.CertificateAlarmHandlerClient||98||sendNotification||Notification will be sent using uri /cert-alarm-handler/v1/scp/certs-update and body:{\"asymmetric-keys\":[{\"name\":\"default_asym\",\"key\":true,\"certificate\":true}],\"trusted-authorities\":[{\"name\":\"default_ca\",\"certificateAuthority\":true}]}"}
+{"version":"1.1.0","timestamp":"2022-12-02T07:44:07.115Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-0||c.e.s.c.CertificateAlarmHandlerClient||71||lambda$run$1||POST request response code: 200"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.043Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-12||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.044Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-13||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.044Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-12||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.111Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-14||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.111Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-13||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.112Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-14||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.112Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-15||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:22.210Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-15||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:24.213Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-0||c.e.s.c.CertificateAlarmHandlerClient||98||sendNotification||Notification will be sent using uri /cert-alarm-handler/v1/scp/certs-update and body:{\"asymmetric-keys\":[],\"trusted-authorities\":[]}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:01:24.314Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-0||c.e.s.c.CertificateAlarmHandlerClient||71||lambda$run$1||POST request response code: 200"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.712Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-16||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.713Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-16||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.713Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-18||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.713Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-19||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.713Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-17||c.e.u.file.KubernetesFileWatch||92||lambda$watchFileNames$3||Kubernetes file change event: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.714Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-19||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.714Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-18||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {cert1.pem=/root/certificates/trustCA/cert1.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:22.714Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-worker-thread-17||c.e.u.file.KubernetesFileWatch||106||lambda$watchContents$4||Reading files: {key.pem=/root/certificates/key.pem, certificate.pem=/root/certificates/certificate.pem}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:24.716Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||98||sendNotification||Notification will be sent using uri /cert-alarm-handler/v1/scp/certs-update and body:{\"asymmetric-keys\":[{\"name\":\"default_asym\",\"key\":true,\"certificate\":true}],\"trusted-authorities\":[{\"name\":\"default_ca\",\"certificateAuthority\":true}]}"}
+{"version":"1.1.0","timestamp":"2022-12-02T08:02:24.813Z","service_id":"eric-scp-worker","severity":"info","message":"certnotifier[7]||vert.x-eventloop-thread-1||c.e.s.c.CertificateAlarmHandlerClient||71||lambda$run$1||POST request response code: 200"}

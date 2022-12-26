@@ -1,0 +1,14 @@
+---
+analysis:
+  validation: 
+    enabled: True
+  rate:
+    enabled: True
+    threshold: 10
+  message:
+    enabled: True
+    threshold:
+      length: 250
+      repetition: 2
+  severity:
+    enabled: True
